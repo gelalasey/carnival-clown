@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastille CSS template for Neocities</title>
+    <meta name="author" content="[your name here]">
+    <meta name="description" content="[write about your site here]">
+  <!--you can change this to "simplified-style.css" if changing all the individual colors is too overwhelming-->
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+    
+    <!--keep everything inside a container so we can change the layout for mobile easily-->
+    <div id="container">
+
+    <aside id="sidebar">
+        <!--another container for layout purposes-->
+        <div class="flex">
+            
+            <div id="icon">
+                <!--replace this with the page url so people can refresh the page easily... at least that's what i always click on people's icons to do.-->
+                <a href="/blog/home.html">
+                    <img src="/gl-pixels/animegel.png" alt="icon">
+                </a>
+            </div>
+            
+            <section id="profile">
+                <h1>
+                <!--same here, link to your page (if you want)-->
+                    <a href="#">⋆✴︎˚｡⋆gelsey land newsletter✶⋆.˚</a>
+                </h1>
+                <!--the first line of your profile~ describe yourself in one sentence or something-->
+                <p>the latest on our attractions and fun from the park owner✩₊˚.⋆.ೃ࿔*:･ </p>
+                
+                <div id="bio">
+                    <p>pronouns: he/him</p>
+                <img src="/gl-pixels/blinkies/blogsweetblog.gif">
+                <img src="/gl-pixels/blinkies/clownboy.webp">
+                
+                </div>
+                
+                <!--add as many paragraphs as you want, the sidebar is scrollable!-->
+        
+            </section>
+        </div>
+        
+        <!--add links to other pages on your site, or other sites you're on!-->
+        <nav>
+        <ul>
+            <li><a href="/blog/home.html">⭑park newsletter⭑</a></li>
+            <li><a href="http://users3.smartgb.com/g/g.php?a=s&i=g36-39145-c7">⭑souvenir shop⭑</a></li>
+            <li><a href="/blog/anime.html">⭑concert stage⭑</a></li>
+            <li><a href="/blog/anime.html">⭑theatre⭑</a></li>
+            <li><a href="/blog/game.html">⭑midway⭑</a></li>
+            <li><a href="/blog/art.html">⭑carousel⭑</a></li>
+
+            <li><a href="/home.html">⭑back to the park⭑</a></li>
+        </ul>
+        </nav>
+        
+        <!--i made it so the stamps section here only shows up on desktop-->
+        <section id="stamps" class="center pc-only">
+            <a target="_blank" href="https://gelseyland.neocities.org/">
+            <!--swap this with your site button if you have one!-->
+                <img src="images/site-button.gif" alt="site button">
+            <!--you can have it link to your site profile if you want people to follow it too :)-->
+            </a>
+        </section>
+        
+        <!--feel free to remove the credit or put it somewhere else, i don't mind!-->
+        <p class="center small-text">blog template by <a href="https://nomnomnami.com">NomnomNami</a></p>
+        
+    </aside>
+    
+    <!--now for the POSTS! the "tagged" class makes sure the tag filters do what they're supposed to-->
+    <main class="tagged">
+        
+        <section id="tag-filters" class="pinned">
+            <details open>
+                <summary>tag filters</summary>
+                <!--when you add new tags here, make sure to add them to your css as well so that the filters will work properly. careful not to make any typos...!-->
+                <label><input type="radio" id="all" name="tag" checked>all</label>
+                <label><input type="radio" id="comedy" name="tag">#comedy</label>
+                <label><input type="radio" id="supernatural" name="tag">#supernatural</label>
+                <label><input type="radio" id="art" name="tag">#art</label>
+                <label><input type="radio" id="idol" name="tag">#idol</label>
+            </details>
+        </section>
+        
+<!--BEGIN POSTING!!!!!!!!-->
+        
+        <!--each post should use the "article" element. set its class to "post", and add any tags that you use with spaces separating them. this is how it knows which posts to filter when you click the buttons above!-->
+        <article class="post intro">
+            <!--you can put your name at the top here, using a fake social media handle or just typing it normally. up to you!-->
+            <div class="post-header">@gelseyland <time>opening day</time></div>
+            <!--remember to change the timestamp... i always forget to lol....-->
+            
+            <h2>theatre</h2>
+            <p>if there's one thing to know about me its that I never <i>ever</i> watch animes live. the one acception to this has been one piece and it's bc my partner refuses to let me read the manga and get ahead of him. </p>
+            <p><b>i am a binge watcher by nature</b> and i cannot function with week to week waiting periods. i already lived through this back in the days of live tv. i am too adhd to even remember what happened 1 hour ago so forget about a whole week inbetween. I watch shows once they've been proven popular and enjoyable and have concluded at least a full season. otherwise i'm just setting myself up for a bad time.</p>
+            
+            <i>i am ashamed to admit how many anime i have all together just stopped watching because i only got access to like 4 episodes and forgot that shit existed.</i>
+            
+            <p>so when you're asking yourself why is this dude still talking about anime that came out 5, 10, 15 years ago...you are being abelist and the park security will take you to theme park jail (it is the ball pit with zip ties on the doors)</p>
+            <section class="tags">
+                <!--the tag section is optional, and you should put each tag inside of an <a> or <span> element! (that way they get styled correctly...)-->
+                <span>#introduction</span>
+                <!--using an id you made a tag for above will make it scroll up to the tag filter section so people can filter posts that way!-->
+            </section>
+        </article>
+        
+        <!--this post demonstrates how readmores are set up, it's just a specially styled details/summary block-->
+        <article class="post idol comedy supernatural">
+            <div class="post-header">@gelseyrevenge <time>7/22/2021, 6:02pm</time></div>
+            <h2 id="zombie-land-saga">Zombie land saga</h2>
+            <p>I will fight someone to the death who claims that subs are always better than dubs. I get that was a real consistent thing back in like *checks watch* 2009... but now that capitalism realizes they can make money off of anime fans and increase their audience size I think dubs have grown to become more entertaining. </p>
+			
+			<mark>case in point - Zombie land saga</mark>
+			
+			<img src="https://c.tenor.com/LbNm6acvJo8AAAAd/tenor.gif">
+            
+            <details class="readmore">
+                <summary>read more</summary>
+                <h3>quick stats</h3>
+                <ul>
+                <li>year watched: 2025</li>
+                <li>episodes: 24/24 (no movie)</li>
+                <li>ranking: ★★★★★ </li>
+                </ul>
+                <h3>quotes</h3>
+                <q>Didn't they have fucking Wikipedia when you were alive?</q> <p>-kotaro</p>
+                <q>I don’t think of mistakes or failures as bad things, that’s not how it works.</q><p>-Ai to Sakura </p>
+                <q>What are you going to do? Die from lack of sleep</q><p>-kotaro </p>
+                <q>You’re dead, but at least the others are trying to live. Will you join them or would you rather just sit and rot?</q><p>-Kotaro to Ai and Junko, outside their training room. </p>
+                <q>“Horse are magical beasts” </q><p>-police man during tai episode  </p>
+                <img src="https://64.media.tumblr.com/87e206c112a74a525e00672c694f2f78/7a4a8ee0cd6b01fe-4b/s400x600/cb8fd523ac153fc38d06a32af81ff02f733e25a8.gifv">
+                
+                <h3>best character</h3>
+                <p>truly so hard to narrow down, there really wasn't a character I actively disliked. they all did a good job bringing the story along and having a decent addition to the plot. </p>
+                <h4>Runner up: yugiri the legendary courtesan</h4>
+                <div class="flexbox">        
+                    <div><img src="https://64.media.tumblr.com/6483b93109b75579f432bcfecafaba79/5fd6d89d1cd28277-16/s640x960/c7eb29fae7552708399305123eed03f9b4a3d5bd.jpg" style="width:200px"></div>
+                    <div><p>I think a lot of this had to do with the fact that her english va is stephanie young...but genuinely she is an excellent character. I loved so many of her one liners, her voice is juicy delicious, and her backstory is hella interesting to the lore.</p></div>
+                </div>
+                <h4>winner: kotaro</h4>
+                <p>oh big suprise i pick the one boy character. and no it's really not just because I am crying laughing at half of his dialogue. he feels like the first p-chan in an idol anime that wasn't just a dopey dude overwhelmed by the beautiful idol with slightly better grounding in reality. he was flawed, he was passionate, he was a real person. He cared about his girls and his hometown. </p>
+                <img src="https://i0.wp.com/drunkenanimeblog.com/wp-content/uploads/2018/11/2018-11-03_18-58-04.png?resize=640%2C356&ssl=1">
+                <p> but also he is a big funny yell man</p>
+
+                <h3>best song</h3>
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/KXOGtK8SNB0?si=arPoKqCcI-B1N5EE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p>read these lyrics and tell me you're not hyped up as hell about this group. I think this was the perfect start to s2 and has just the most beautiful imagery. while i know not everyone dug the dubbed music - this one song i wish would have made the cut. in fact, one day i might do my own fan translation of it because i just want it so badly. </p>
+                
+            </details>
+            
+            <section class="tags">
+                <a href="#idol">#idol</a><a href="#comedy">#comedy</a><a href="#supernatural">#supernatural</a><tag
+            </section>
+            
+        </article>
+        
+        <!--you don't have to add the tag links at the bottom of the post for it to show up in the tag filters! as long as you remember to put the tag id in the article class-->
+    
+        <!--this button brings you back to the top of the page, like it says-->
+        <section id="page-nav">
+            <p class="center"><a href="#">back to top</a></p>
+        </section>
+        
+    </main>
+
+    <footer>
+    </footer>      
+    </div>
+  </body>
+</html>

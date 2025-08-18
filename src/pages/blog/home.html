@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastille CSS template for Neocities</title>
+    <meta name="author" content="[your name here]">
+    <meta name="description" content="[write about your site here]">
+  <!--you can change this to "simplified-style.css" if changing all the individual colors is too overwhelming-->
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+    
+    <!--keep everything inside a container so we can change the layout for mobile easily-->
+    <div id="container">
+
+    <aside id="sidebar">
+        <!--another container for layout purposes-->
+        <div class="flex">
+            
+            <div id="icon">
+                <!--replace this with the page url so people can refresh the page easily... at least that's what i always click on people's icons to do.-->
+                <a href="#">
+                    <img src="/gl-pixels/blogicon.png" alt="icon">
+                </a>
+            </div>
+            
+            <section id="profile">
+                <h1>
+                <!--same here, link to your page (if you want)-->
+                    <a href="#">⋆✴︎˚｡⋆gelsey land newsletter✶⋆.˚</a>
+                </h1>
+                <!--the first line of your profile~ describe yourself in one sentence or something-->
+                <p>the latest on our attractions and fun from the park owner✩₊˚.⋆.ೃ࿔*:･ </p>
+                
+                <div id="bio">
+                    <p>pronouns: he/him</p>
+                <img src="/gl-pixels/blinkies/blogsweetblog.gif">
+                <img src="/gl-pixels/blinkies/clownboy.webp">
+                
+                </div>
+                
+                <!--add as many paragraphs as you want, the sidebar is scrollable!-->
+        
+            </section>
+        </div>
+        
+        <!--add links to other pages on your site, or other sites you're on!-->
+        <nav>
+        <ul>
+            <li><a href="/blog/home.html">⭑park newsletter⭑</a></li>
+            <li><a href="http://users3.smartgb.com/g/g.php?a=s&i=g36-39145-c7">⭑souvenir shop⭑</a></li>
+            <li><a href="/blog/anime.html">⭑concert stage⭑</a></li>
+            <li><a href="/blog/anime.html">⭑theatre⭑</a></li>
+            <li><a href="/blog/game.html">⭑midway⭑</a></li>
+            <li><a href="/blog/art.html">⭑carousel⭑</a></li>
+            <li><a href="/home.html">⭑back to the park⭑</a></li>
+        </ul>
+        </nav>
+        
+        <!--i made it so the stamps section here only shows up on desktop-->
+        <section id="stamps" class="center pc-only">
+            <a target="_blank" href="https://gelseyland.neocities.org/">
+            <!--swap this with your site button if you have one!-->
+                <img src="images/site-button.gif" alt="site button">
+            <!--you can have it link to your site profile if you want people to follow it too :)-->
+            </a>
+        </section>
+        
+        <!--feel free to remove the credit or put it somewhere else, i don't mind!-->
+        <p class="center small-text">blog template by <a href="https://nomnomnami.com">NomnomNami</a></p>
+        
+    </aside>
+    
+    <!--now for the POSTS! the "tagged" class makes sure the tag filters do what they're supposed to-->
+    <main class="tagged">
+        
+        <!--first is a deviantart inspired "current status" section where you can list things you're currently up to-->
+        <section id="status" class="pinned">
+            <!--remove the "open" part to have this closed by default-->
+            <details open>
+                <!--i like to include a last updated date for this part-->
+                <summary>coming soon <time>8/05/2025</time></summary>
+                <ul>
+                    <!--i don't think this is reeeally how you're supposed to use html lists, but we're just having fun here so it's ok-->
+                    <li>theatre:</li>
+                    <li>yuru camp</li>
+                    
+                    <li>concert stage:</li>
+                    <li>cho toki</li>
+                    
+                    <li>midway:</li>
+                    <li>uma musume</li>
+                    
+                    <li>carousel:</li>
+                    <li>mini garden</li>
+                </ul>
+            </details>
+        </section>
+        
+        <section id="tag-filters" class="pinned">
+            <details open>
+                <summary>tag filters</summary>
+                <!--when you add new tags here, make sure to add them to your css as well so that the filters will work properly. careful not to make any typos...!-->
+                <label><input type="radio" id="all" name="tag" checked>all</label>
+                <label><input type="radio" id="travel" name="tag">#travel</label>
+            </details>
+        </section>
+        
+<!--BEGIN POSTING!!!!!!!!-->
+        
+        <!--each post should use the "article" element. set its class to "post", and add any tags that you use with spaces separating them. this is how it knows which posts to filter when you click the buttons above!-->
+        <article class="post intro">
+            <!--you can put your name at the top here, using a fake social media handle or just typing it normally. up to you!-->
+            <div class="post-header">@gelseyland <time>opening day</time></div>
+            <!--remember to change the timestamp... i always forget to lol....-->
+            
+            <h2>Welcome!</h2>
+            <p>ignore the html, this is not a blog. this is the <b>park newsletter</b> and my main goal here is to create a micro collection of all my writings, reviews, recaps, and recommendations. each area of the park represents a different interest of mine. If you get lost, don't worry. Your friendly neighborhood theme park owner has you covered</p>
+            <ul>
+            <li><a href="/blog/anime.html">Theatre</a>: recaps and reviews on anime i'm watching</li>
+            <li><a href="/blog/music.html">concert stage</a>: music and idol groups of various genres</li>
+                <li><a href="#">midway</a> video game logs and reviews, horror and otome censored</li>
+                <li><a href="#">carousel</a>: art projects, i mostly like to build miniatures and write gay song lyrics but who knows what else adhd will lead me into</li>
+                <li><a href="#"></a></li>
+            </ul>
+            <p>the main page you're on here is just about the park itself - and maybe a bit about me. little life updates from time to time that i dont feel like spamming on social media. hope you enjoy and dont forget to <mark>hit me up in <a href="http://users3.smartgb.com/g/g.php?a=s&i=g36-39145-c7">the souvenir shop!</a></mark></p>
+            <section class="tags">
+                <!--the tag section is optional, and you should put each tag inside of an <a> or <span> element! (that way they get styled correctly...)-->
+                <span>#introduction</span>
+                
+                <!--using an id you made a tag for above will make it scroll up to the tag filter section so people can filter posts that way!-->
+            </section>
+        </article>
+        <article class="post idol comedy supernatural">
+            <div class="post-header">@gelseyinhouse <time>8/8/2025, 6:43pm</time></div>
+            <h2 id="doll-museum">i went to a dollhouse museum</h2>
+            <p>a while ago i went to the <a href="https://toyandminiaturemuseum.org/">national museum of toys and miniatures</a> in kansas city, mo. this was during my arduous 24+ bus ride from hell (more on that never) and i was surprised this gem existed. it's got a great combination of both nostalgia and history. let's just get straight to the goods. </p>
+            <details class="readmore">
+                <summary>read more</summary>
+                <h3>Playsets i drool over</h3>
+                <p>there's two main sections in this museum - toys and miniatures. I'm going to start with the colorful cute playsets that fit best with this blog, as we go on it's going to get more muted in color pallet if that offends your clownish sensibilities. usually it does for me but this park owner knows art when he sees it. </p>
+                <h4>polly pocket</h4>
+            <div class="box">
+            <div><a href="http://www.onlypollypocket.com/1989/Skating_Party/skating_party.html">1989 Polly Pocket Skating Party</a>
+                <p>The little elevator is previous and the circle ground is stand out</p>
+                <a href="http://www.onlypollypocket.com/1990/Midge_s_Flower_Shop/midges_flower_shop.html">1990s Midge’s Flower Shop</a><p>The color pallet is satisfyingly matchy</p>
+                <a href="http://www.onlypollypocket.com/1990/Pretty_Hair_Playset/pretty_hair_playset.html">1990s Pretty Hair Playset</a><p>Apparently also comes with barrettes, mirror and comb for the user. Wish it came with a bottom but cute size</p></div>    
+            <div><img src="/blog/images/home/1000003286.jpg"></div> 
+            </div>
+            <a href="https://www.worthpoint.com/worthopedia/1990-barbie-magical-mansion-sale-474225244"><h4>1990 barbie's magical mansion</h4></a>
+                <div class="box">
+                <div><img src="/blog/images/home/bdh2.jpg"></div> 
+                <div><img src="/blog/images/home/bdh1.jpg"></div>     
+                </div>
+            <p>I loved the bathtub - I definitely remember this existing somewhere. Just a cute pink basic home! I dont think I’d ever invest in this piece because I would want to update it with more details.</p>
+            <a href="https://www.browneyedrose.com/collections/berry-happy-home-dollhouse"><h4>1980s Berry Happy Home Dollhouse Playset Strawberry Shortcake</h4></a>
+                <div class="box">
+                <div><img src="/blog/images/home/sbsc1.webp"> <p>This house is really charming to me, there seems to be a lot of variety on how to set it up as well, not a lot of fixed furniture so you could set it up to your liking.</p></div>
+            
+                <div><img src="/blog/images/home/sbsc2.jpg" style="max-height:300px"><p>Look at this bike! I didn’t realize how cute SBSC franchise was. I was too young for this line but man I might really grow to love collecting them or at least taking inspiration</p> </div>
+                    
+                </div> 
+                <h4>1981 Strawberry Shortcake Garden House Gazebo</h4>
+                <p>(Featured Doll Apple Dumplin’ 1983) </p>
+                <div class="box">    
+                <div><img src="/blog/images/home/sbsc3.jpg"></div>
+                <div><img src="/blog/images/home/sbsc6.webp"></div>
+                </div>
+                <p>How did they think of so many ways to use a strawberry in their builds? This is awesome creativity and thinking outside the 4 walls.</p>
+                <h4>1981 Strawberry Shortcake Garden House Gazebo</h4>
+                <p>(Featured Doll Blueberry Muffin 1984) </p>
+                <div class="box">       
+                <div><img src="/blog/images/home/sbsc5.webp"><p><i>please note: the webp images are sources from the hot links in the header title, i wanted to show off more angles but sadly the glass and being in a case and everything got in the way.</i></p></div>
+                <div><img src="/blog/images/home/sbsc4.webp"></div>
+                </div>
+            
+                <img src="/gl-pixels/heartdiv.png">
+                <h3>Dolls i wish i could own</h3>
+                <div class="box">
+                <div><img src="/blog/images/home/greendoll.jpg"><p>i’m so mad i forgot to write down her name or history epiteth - but maybe I can message the museum later. She has the most GORGEOUS outfit that I wish I could wear. She looks exactly like the type of doll I would have picked out in the store when I was little. </p></div>
+                <div><img src="/blog/images/home/swimdoll.jpg"><p>This is called a French swimming doll from the 19th century, I just thought she looked freaky and wanted a picture of her. I love her weird body. Good example of how intent doesn’t always translate well. </p></div>
+                </div>
+                <div class="box">
+                <div><img src="/blog/images/home/tinies.jpg"><p>These smaller dolls reminded me a bit of something my grandma might have had. I love the small accessories, could I make these? </p></div>
+                <div><img src="/blog/images/home/fronch.jpg"><p>Frenchy style doll - I loved the detail work on her outfit, I want to be able to make outfits for dolls an intricate at this! </p></div>
+                </div>
+                <h4>Liddle Kiddles</h4>
+                <div class="box">
+            <div><img src="/blog/images/home/cola1.webp"></div>
+                <div><img src="/blog/images/home/cola2.jpg"></div>
+                <div><img src="/blog/images/home/cola3.jpg"></div>
+               </div>
+                <p> I am fascinated with the toyline of Liddle Kiddles (despite the unfortunate name) These were from the 1960s by Mattel Japan and every one of their names have to have “iddle” in it. They make me think of retro LOL dolls in terms of size and playstyle. I don’t think I would go out of my way to collect them, but they were fun to learn about. The perfume bottle is an example of the related lines like Kola Kiddles (in soda bottles), Kiddle Kologne,  and hauntingly drawn eyes on the jewelry. The Kolas are honestly cute enough I’d think about getting them maybe. </p>
+                <a href="https://www.dollreference.com/mattel-liddle-kiddles-dolls-first-twenty-four-usa/">reference</a>
+                <img src="/gl-pixels/heartdiv.png">
+                <h3>miniatures i wish i could build</h3>
+                <div class="box">
+                <div><img src="/blog/images/home/1000003355.jpg"></div>
+                <div><img src="/blog/images/home/1000003349.jpg"></div>
+                <div><img src="/blog/images/home/10000033023.jpg"></div>
+                </div>
+                <div class="box">
+                <div><img src="/blog/images/home/1000003332.jpg"></div>
+                <div><img src="/blog/images/home/1000003333.jpg"></div>
+                </div>
+                <div class="box">
+                <div><img src="/blog/images/home/1000003328.jpg"></div>
+                <div><img src="/blog/images/home/1000003329.jpg"></div>
+                <div><img src="/blog/images/home/1000003330.jpg"></div>
+                <div><img src="/blog/images/home/1000003331.jpg"></div>
+                </div>
+                <div class="box">
+                <div><img src="/blog/images/home/1000003339.jpg"></div>
+                <div><img src="/blog/images/home/1000003340.jpg"></div>
+                <div><img src="/blog/images/home/1000003341.jpg"></div>
+                <div><img src="/blog/images/home/1000003348.jpg"></div>
+                </div>
+                <div class="box">
+                <div><img src="/blog/images/home/1000003319.jpg"></div>
+                <div><img src="/blog/images/home/1000003320.jpg"></div>
+                <div><img src="/blog/images/home/1000003321.jpg"></div>
+                <div><img src="/blog/images/home/1000003322.jpg"></div>
+                </div>
+                <div class="box">
+                <div><img src="/blog/images/home/1000003324.jpg"></div>
+                <div><img src="/blog/images/home/1000003315.jpg"></div>
+                <div><img src="/blog/images/home/1000003327.jpg"></div>
+                </div>
+                <div class="box">
+                <div><img src="/blog/images/home/1000003314.jpg"></div>
+                <div><img src="/blog/images/home/1000003303.jpg"></div>
+                <div><img src="/blog/images/home/1000003304.jpg"></div>
+                </div>
+                <img src="/gl-pixels/heartdiv.png">
+                <h3>teenie furniture pieces</h3>
+                <div class="box">
+                <div><img src="/blog/images/home/1000003317.jpg"></div>
+                <div><img src="/blog/images/home/1000003318.jpg"></div>
+                <div><img src="/blog/images/home/1000003316.jpg"></div>
+                <div><img src="/blog/images/home/1000003313.jpg"></div>
+                <div><img src="/blog/images/home/1000003301.jpg"></div>
+                </div>
+                <div class="box">
+                <div><img src="/blog/images/home/1000003308.jpg"></div>
+                <div><img src="/blog/images/home/1000003307.jpg"></div>
+                <div><img src="/blog/images/home/1000003311.jpg"></div>
+                <div><img src="/blog/images/home/1000003306.jpg"></div>
+                <div><img src="/blog/images/home/1000003310.jpg"></div>
+                </div>
+                <div><img src="/blog/images/home/1000003309.jpg"></div>   
+                <img src="/gl-pixels/heartdiv.png">
+                <h3>how they're made</h3>
+                <div class="box">
+                <div><img src="/blog/images/home/1000003305.jpg"></div>
+                <div><img src="/blog/images/home/1000003335.jpg"></div>
+                <div><img src="/blog/images/home/1000003338.jpg"></div>
+                </div>
+                <div class="box">
+                <div><img src="/blog/images/home/1000003337.jpg"></div>
+                <div><img src="/blog/images/home/1000003336.jpg"></div>
+                </div>
+                <p>I'm going to show my nerd ass off so much here - but I thought it was so cool how they demonstrated how they replicate wood grain realistically with matching types. I'm so mad I didn't write it down (ꐦ¬_¬) </p>
+            </details>
+            
+            <section class="tags">
+                <a href="#travel">#travel</a><span>#miniatures</span><span>#dolls</span>
+            </section>
+            
+        </article>  
+        
+        <!--you don't have to add the tag links at the bottom of the post for it to show up in the tag filters! as long as you remember to put the tag id in the article class-->
+    
+        <!--this button brings you back to the top of the page, like it says-->
+        <section id="page-nav">
+            <p class="center"><a href="#">back to top</a></p>
+        </section>
+        
+    </main>
+
+    <footer>
+    </footer>      
+  </body>
+</html>

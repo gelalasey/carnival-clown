@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pastille CSS template for Neocities</title>
+        <meta name="author" content="[your name here]" />
+        <meta name="description" content="[write about your site here]" />
+        <!--you can change this to "simplified-style.css" if changing all the individual colors is too overwhelming-->
+        <link href="style.css" rel="stylesheet" type="text/css" media="all" />
+    </head>
+<body>
+<!--keep everything inside a container so we can change the layout for mobile easily-->
+<div id="container">
+<aside id="sidebar">
+                <!--another container for layout purposes-->
+                <div class="flex">
+                    <div id="icon">
+                        <!--replace this with the page url so people can refresh the page easily... at least that's what i always click on people's icons to do.-->
+                        <a href="#">
+                            <img src="/gl-pixels/gamergel.png" alt="icon" />
+                        </a>
+                    </div>
+
+                    <section id="profile">
+                        <h1>
+                            <!--same here, link to your page (if you want)-->
+                            <a href="#">⋆✴︎˚｡⋆gelsey land newsletter✶⋆.˚</a>
+                        </h1>
+                        <!--the first line of your profile~ describe yourself in one sentence or something-->
+                        <p>the latest on our attractions and fun from the park owner✩₊˚.⋆.ೃ࿔*:･</p>
+
+                        <div id="bio">
+                            <p>pronouns: he/him</p>
+                            <img src="/gl-pixels/blinkies/blogsweetblog.gif" />
+                            <img src="/gl-pixels/blinkies/clownboy.webp" />
+                        </div>
+
+                        <!--add as many paragraphs as you want, the sidebar is scrollable!-->
+                    </section>
+                </div>
+
+                <!--add links to other pages on your site, or other sites you're on!-->
+                <nav>
+                    <ul>
+                        <li><a href="/blog/home.html">⭑park newsletter⭑</a></li>
+                        <li><a href="http://users3.smartgb.com/g/g.php?a=s&i=g36-39145-c7">⭑souvenir shop⭑</a></li>
+                        <li><a href="/blog/anime.html">⭑concert stage⭑</a></li>
+                        <li><a href="/blog/anime.html">⭑theatre⭑</a></li>
+                        <li><a href="/blog/game.html">⭑midway⭑</a></li>
+                        <li><a href="/blog/art.html">⭑carousel⭑</a></li>
+                        <li><a href="/home.html">⭑back to the park⭑</a></li>
+                    </ul>
+                </nav>
+
+<!--i made it so the stamps section here only shows up on desktop-->
+                <section id="stamps" class="center pc-only">
+                    <a target="_blank" href="https://gelseyland.neocities.org/">
+                        <!--swap this with your site button if you have one!-->
+                        <img src="images/site-button.gif" alt="site button" />
+                        <!--you can have it link to your site profile if you want people to follow it too :)-->
+                    </a>
+                </section>
+
+                <!--feel free to remove the credit or put it somewhere else, i don't mind!-->
+                <p class="center small-text">blog template by <a href="https://nomnomnami.com">NomnomNami</a></p>
+            </aside>
+
+<!--now for the POSTS! the "tagged" class makes sure the tag filters do what they're supposed to-->
+<main class="tagged">
+                <section id="tag-filters" class="pinned">
+                    <details open>
+                        <summary>tag filters</summary>
+                        <!--when you add new tags here, make sure to add them to your css as well so that the filters will work properly. careful not to make any typos...!-->
+                        <label><input type="radio" id="all" name="tag" checked />all</label>
+                        <label><input type="radio" id="tycoons" name="tag" />#tycoons</label>
+                        <label><input type="radio" id="lifesims" name="tag" />#lifesims</label>
+                        <label><input type="radio" id="datingsims" name="tag" />#datingsims</label>
+                        <label><input type="radio" id="mobage" name="tag" />#mobage</label>
+                    </details>
+                </section>
+
+<!--!!!!!!!!BEGIN POSTING!!!!!!!!-->
+
+<!--each post should use the "article" element. set its class to "post", and add any tags that you use with spaces separating them. this is how it knows which posts to filter when you click the buttons above!-->
+    <article class="post intro">
+<!--you can put your name at the top here, using a fake social media handle or just typing it normally. up to you!-->
+<div class="post-header">@gelseyland <time>opening day</time></div>
+<!--remember to change the timestamp... i always forget to lol....-->
+
+                    <h2>im rich in my idle sim</h2>
+                    <p>
+                        what fantasy do you like to escape into video games for? for my partner it's the ability to be
+                        the hero and escape into another world. And for my other partner its getting to go somewhere so
+                        scary and crazy you can forget about everything else.
+                    </p>
+                    <p>
+                        one of my favorite worlds to get lost in is one where i've defeated capitalism and worked my way
+                        to the top. life sims, farming sims, tycoon sims, business sims, make my mom proud of me sims
+                        (that last genre doesn't exist but should).
+                    </p>
+                    <section class="tags">
+                        <!--the tag section is optional, and you should put each tag inside of an <a> or <span> element! (that way they get styled correctly...)-->
+                        <span>#introduction</span>
+
+                        <!--using an id you made a tag for above will make it scroll up to the tag filter section so people can filter posts that way!-->
+                    </section>
+                </article>
+    <!--hsd--><article class="post mobage">
+    <div class="post-header">@hellosweetgelsey <time>8/11/2025, 5:51pm</time></div>
+    <h2 id="hsd">hello sweet days: that time i sold my soul to sanrio</h2>
+    <p>gatcha is a scam. we used to just pay a base amount of a game and got to play with all the pieces either immediately or gauranteed through play time. why pay money for something that doesn't even exist. just make your own art.</p>
+    <p>look....i know...and yet...i fell for it..</p>
+    <p>i spent....<s>redacted</s> dollars i didn't have for pixels in a hello kitty furniture and fashion idle game. i had no business getting invested in this game as much as i did. there was like...zero game play, just collecting pixels.</p>
+    <p>it may not have been my best moment...but i did get all these cute pics out of it</p>
+    <details class="readmore">
+    <summary>my trophies</summary>
+    <h3>rip hsd account jan 2024-mar 2024</h3>
+        <div class="flexbox">
+            <div><img src="/blog/images/game/hsd9.webp">
+            <p>my very first look in the game, when i scored a bunch of gatcha items from the my melody new years set. already off to a bad start i'm not even a my mello fan. what am i doing?!</p></div>
+            <div><img src="/blog/images/game/hsd6.webp" alt="Image 6" >
+         <p>my 1st full dreamie collection set was strawberry jam! I felt so accomplished for pushing the buttons to get these</p>  </div>
+        </div>
+        <div class="flexbox">
+
+                <img src="/blog/images/game/hsd4.webp" alt="Image 4" style=width:50%>
+                <img src="/blog/images/game/hsd5.webp" alt="Image 5" style=width:50%>
+    
+    <p>I had to put pompom in jail bc he was showing too much x...his son betrayed him and became his jailer. it was very dramatic</p> 
+                 </div> 
+    <img src="/gl-pixels/strawdiv.webp"><img src="/gl-pixels/strawdiv.webp">
+        
+    <h3>favorite parts</h3> 
+        <div class=”flexbox”> 
+            <div><img src="/blog/images/game/hsd2.jpg" alt="Image 2">
+                <p>there was a lot of socializing build into the game which made it fun to play. you could host little parties and participate in the in-game forums. I love when games make it so that the fandom interaction can happen on the app itself. I know censoring can become an issue but like...it's a game about hello kitty. the lore wasn't that deep.</p></div></div>
+        <div class="flexbox">   
+        <div><img src="/blog/images/game/hsd7.webp" alt="Image 4" >
+         <p>trading plushing with other people was such a fun little gimmick, the plushies were not hard to get and made such cute accents</p></div>  
+        <div><img src="/blog/images/game/hsd8.webp" alt="Image 5">
+        <p>trading was a huge part of the game, which is refreshing when most gatcha force you to suffer with whatever you pull. albeit this game's gatcha rate overall was brutally expensive. so win some lose some?</p></div>
+        </div>
+    <img src="/gl-pixels/strawdiv.webp"><img src="/gl-pixels/strawdiv.webp">
+    <h3>worst parts</h3> 
+            <div class="flexbox">
+            
+            <p>Any time there's gatcha the completionist in me gets SUPER competitive. I just want to finish them all. and i'll be real - that's the main reason why i had to quit the game. i couldn't enjoy the gradual collection and the slower nature of the game.... although one could argue the predatory financial angel WAS one of the intentional aspects of the game... but that's just one man's opinion</p>  
+            </div>
+        <div class="flexbox">
+        <div><p>the prices overall were insane. it cost about 1050 coins per pull and each pull was 7 or 8 items (can't remember) which is already below the standard 10. Not only was it way more to whale for full sets in this game (which came out to roughly 30 items). </p></div><div> <img src="/blog/images/game/hsd1.jpg" alt="Image 1"></div></div>
+        <p>If you had perfect luck it would still take you about 4-5 pulls to get everything. And chances are you <b>wont</b> be that ungodly lucky. While the trading did make getting dupes not as terrible, if no one wanted them you were sol. </p>
+        <p>the last gripe I had about prices were about the loyalty program. like other gatcha, you got ranked for how much you spent with irl money. So if you were a higher level you got access to more items, exclusive gatcha, things of that nature. We love loyalty programs! But what was infuriating was that it <b>reset every month</b> So if you spent 10 bucks in Oct and 10 bucks in Nov, you'd still wouldn't make the 20 buck tier. the whale level expected for this game was batshit.</p>      
+        <div class="flexbox">
+        <img src="/blog/images/game/hsd10.webp" alt="Image 10" style=width:32%>
+        <p><i>no matter my available game budget - I will always love pompompurin <img src="/gl-pixels/pompomlove.webp"></i></p>
+        </div>
+        <img src="/gl-pixels/strawdiv.webp"><img src="/gl-pixels/strawdiv.webp">
+    <h3>my overall ranking</h3>
+    <p>If 5 is best game ever and 1 is i did play that...I'd put this squarely at a 2. Not the greatest game ever and I dont think I could ever get back into it... but I really enjoyed it while I was there. It captured my adhd heart for those few months and helped me learn a lot more about the sanrio franchise. I even "made new friends"... not with people... with the mascots I mean. I found new ones I didn't know about that have become new favorites. </p>
+    <h4>In a nutshell - Sanrio isn't the worst place to sell your soul...</h4> 
+        <img src="/blog/images/game/hsd3.jpg" alt="Image 3" >
+        
+    </details>
+    <p class="center"><a href="#">back to top</a></p>
+    </article>              
+    <!--gakumas--><article class="post tycoon mobage">
+                    <h2 id="gakumas">Gakuen idolmaster 学園アイドルマスター</h2>
+                    <div class="post-header">@hajimegelsey <time>8/11/2025, 2:25pm</time></div>
+                    <p>
+                        my dream school is this: wake up everyday in a lovely japanese campus surrounded by students who
+                        are all aspiring idols. go to class, hang with friends, and spend freetime scounting potential
+                        talent to produce in order to fulfill your goal of becoming an idol producer. the minute i
+                        learned this im@s entry existed you bet your ass i <b>sprinted</b> over to download. and lo and behold i was not disappointed.
+                    </p>
+                    <details class="readmore">
+                        <summary>read more</summary>
+                        <h3>about:</h3>
+                        <p>
+                            Gakuen Idolmaster (referred to in fandom as gakumas) is the perfect combination of my two
+                            favorite tropes in animes - school life and idols. Here you a student at Hatsuboshi Gakuen,
+                            a school for future idols and producers to grow their skills. As a student on the producer
+                            track you need to scout potential talent and grow them towards success. it's pretty much a
+                            roguelite raising sim with cute idol girls. Very similar to gameplay mechanics of idolly
+                            pride or uma musume.
+                        </p>
+                        <h3>why i recommend it:</h3>
+                        <p>
+                            Because this is my dream scenario of academia, focus on trainee life, and genuinely
+                            enjoyable characters. in past imas games i felt like the overflow of idols led to some
+                            becoming so one dimensional there was no fun in getting to know them (looking at you
+                            <a href="https://project-imas.wiki/Noriko_Shiina">Noriko the donut idol</a>)
+                        </p>
+                        <p>
+                            while note all the girls are my favorite, their personality and history ties directly into
+                            the game play. The weak and sickly idol has a lower HP, the former ballerina scores higher
+                            in dance than other areas, the sleepy idol stores up all her boosts for one final point
+                            score at the end. it really makes you feel like you are producing them in a way that best
+                            suits their personalitites.
+                        </p>
+
+                        <h2>quick resources</h2>
+                        <div class="box">
+                            <div>
+                                <ul>
+                                    <li>
+                                        <a href="https://www.youtube.com/watch?v=KLd543uNFSw">
+                                            A Beginner's Guide to Gakuen Idolmaster</a
+                                        >
+                                        by sw\tch
+                                    </li>
+                                    <li>
+                                        <a href="https://gakumas.natsume.io/">Play Gakumas in English</a> via GAKUM@s
+                                        localization
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <img
+                                    src="https://64.media.tumblr.com/5b36bfdda84690ceb89eb8a1f8b79dd8/1b75ac101b5efb25-f0/s400x600/02d863643ea406f37219a9d647b79b82c52f21fb.pnj" />
+                            </div>
+                        </div>
+                        <img src="/gl-pixels/games/o5gldq8r3l2f1.jpg" />
+                    </details>
+
+                    <section class="tags">
+                        <a href="#tycoon">#tycoons</a><a href="#mobage">#mobilegames</a
+                        ><span>#idolmaster</span><span>#gakumas</span><span>#hesjustlikemeforreal</span>
+                    </section>
+                    <p class="center"><a href="#">back to top</a></p>
+                </article>
+    <!--underrated--><article class="post tycoons lifesims datingsims">
+                    <div class="post-header">@youprobablyneverheardofgelsey <time>8/11/2025, 10:51pm</time></div>
+                    <h2 id="underrated">my top underrated games in my library</h2>
+                    <p>
+                        what makes a game underrated? if everyone you know is playing it then isn't anyone who matters
+                        playing it? if it's got a large enough player base that prevents the game from getting shut down
+                        servers is it successful? let's not worry about the specific. for this list I'm going through my
+                        favorite games in my steam library that have under 50k positive reviews. For reference games
+                        like Stardew Valley are currently sitting at over 700k positive reviews. These can also count as
+                        games that are well known but still have shit reviews. Just because it was terrible for you
+                        doesn't mean it's trash for me.
+                    </p>
+                    <p>
+                        <b>heads up:</b> some games include dating sims that include adult interactions. i dont show
+                        anything explicity but i do say fuck words.
+                    </p>
+                    <details class="readmore">
+                        <summary>let's get ranking</summary>
+                        <p>
+                            <b>warning:</b> I will do my best to avoid end game spoilers but I will at least be spoiling
+                            some basic intros and set up of the games, don't read if you want to go in blind.
+                        </p>
+                        <h3>cozy grove</h3>
+                        <h4>current review est: 7k</h4>
+                        <p>
+                            i played this originally on switch and would recommend this as opposed to going mobage, it
+                            is way too time gated for my liking. just pay the $X upfront and be happy in the long run. I
+                            spent untold hours satisfyingly coloring in my map, gathering materials and befriending the
+                            sweetest bear ghosts.
+                        </p>
+                        <img
+                            src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1458100/ss_4e637bfdb6089d8eadd6e23d7d7868628198bad1.600x338.jpg?t=1678124698" />
+                        <p>
+                            You play as a spirit scout whose on a mission to earn badges and make this island a cute and
+                            habitable place. The stories of the npcs were really sweet but with like a nice somber
+                            twist. they're all <i>dead</i> remember? unlike other cozy sims this avoids the traditional
+                            farming set up in favor of developing an overgrown wild island. there is so much freedom
+                            when it comes to decoration and placement, but also good direction to place items that
+                            satisfy and match the preferences of nearby ghosties. oh and the music *chefs kiss*
+                        </p>
+
+                        <h3>Chinese Parents</h3>
+                        <h4>current review est: 22k</h4>
+                        <p>
+                            if you like child raising sims, this is your game. if you like learning about other
+                            cultures, this is your game. if you like match 3 games and satisfying popping animations,
+                            <i>this is your game</i>. Culturally i can't common on how realistically the game portrays
+                            chinese childhood...seeing as I'm not Chinese. But the developers are chinese and the game
+                            was originally written in chinese. What's even cooler is that in game you can answer surveys
+                            about whether or not you experienced a similar scenario in your childhood.
+                        </p>
+                        <img
+                            src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/736190/ss_b3db328f04b25481dc8203ff4dcbc1ba904b583a.600x338.jpg?t=1754625690" />
+                        <p>
+                            You start the game as a literal infant and have to gain the skills you need to become a
+                            model child and high scorer on the culturally infamous gaokao exam. You earn skills in
+                            different areas to unlock differnt outcomes for your future including careers, spouses, and
+                            parenting styles for when you raise the next generation. I spent hours trying to find all
+                            the possible combinations and was not disappointed.
+                        </p>
+                        <h3>idol manager</h3>
+                        <h4>current review est: 3.5k</h4>
+                        <p>
+                            ok i know if you got this far i've definitely got some idol lovers out there who want a more
+                            immersive idol sim. as much as i love mobage out there with wonderful idols i've come to
+                            love, i wanted a game where i could build their entire image from scratch. and i was not
+                            disappointed.
+                        </p>
+                        <img
+                            src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/821880/ss_eacad7b21b74b2d899e2458f4d9b74a5641ddb7f.600x338.jpg?t=1734416211" />
+                        <p>
+                            You are the manager of a brand new idol company with some not at all seedy benefactors
+                            behind the scenes. You name the groups. You hire the girls. You pick the songs, styles,
+                            promotions, everything. <s>you can also date the idols if you're into that...</s> This game
+                            did a good job trying to recreate a lot of the dark issues that arise in the idol industry
+                            without being too fan servicey about it. They walk a fine line soemtimes
+                            <s
+                                >remember i said you can date the idols...that you manage...in a power
+                                imbalance...sometimes underage</s
+                            >. But you can also completely ignore that aspect of the game. Which I do. I'm here to make
+                            money ladies, not date. let's get focused.
+                        </p>
+                        <p>
+                            It's not for everyone, but it is extremely flexible and mod friendly (with lots of wardrobe
+                            and character sprite updates). it really lets you play however you want and gives you lots
+                            of fun scenarios to manage.
+                        </p>
+
+                        <h3>maid cafe on electric street</h3>
+                        <h4>current review est: under 1k</h4>
+                        <p>
+                            i found this game one day by skimming through games in the kawaii tag. i wasn't sure it was
+                            going to be a good fit, the graphics were a bit too gritty looking for me at first. but then
+                            i gave it a shot and was not disappointed.
+                        </p>
+                        <img
+                            src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1789030/ss_c7308037b48ae6dc790c052bd4e825aaa702e141.600x338.jpg?t=1738660322" />
+                        <p>
+                            this game plays half as a restaurant sim and half as a life sim. If you liked wandering the
+                            streets of tokyo in persona 5 i think you will enjoy this game. the side scroller layout is
+                            really different and fun. the world is cute and pixelated. it really feels like you live in
+                            the heart of akibahara. my biggest critique of the game is wishing there was a bit more in
+                            terms of customizing your mc. aaaand i didn't finish the game because i started it right
+                            before a different game i wanted to play came out. But that doesn't mean
+                            <i>you</i> shouldn't play it. finish it and tell me to get back into it.
+                        </p>
+
+                        <h3>nancy drew series</h3>
+                        <h4>current review est: under 1k</h4>
+                        <p>
+                            im going to date myself so hard but i dont care if it means i convince you to try out the
+                            nancy drew series. very few people remember this game coming out in the early 2000s, but i
+                            do. my neighbor convinced me to go to target and buy the physical c.d.s (as you did back in
+                            the stone age). I started playing secret of the scarlet hand and was hooked since.
+                        </p>
+                        <img
+                            src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/43600/ss_4bad214d13354a2bcd5563429ab6a8d1fb8b89c7.600x338.jpg?t=1734469468" />
+                        <p>
+                            you're nancy drew and you're here in this point and click story to solve a mystery. you
+                            interview suspects, solve puzzles, and perform chores that are completely inappropriate most
+                            of the time for a teenage guest on vacation but who cares about child labor laws when there
+                            could be <i>g..g...gg...ghosts!</i> Each game is set in different cities and you get to
+                            learn a lot of fun facts about history, science, culture, and more than you ever wanted to
+                            know about morse code (somehow it always gets in there).
+                        </p>
+                        <p>
+                            There are so many different stories you can choose from, each with great replay value that
+                            streamers are still playing these games over for dozens of times. My top recs are Warnings
+                            at Waveryly Academy for the dark academia girlies, Haunting of Castle Malloy for the whimsy
+                            goths, and the final scene for some jump scares that still get me.
+                        </p>
+
+                        <h3>max gentleman sexy business</h3>
+                        <h4>current review est: 1.5k</h4>
+                        <p>
+                            lets say you wanted play hunie pop but then thought to yourself, i wish this had more
+                            historical references and humor. <b>good news gang</b> you've got max gentleman sexy
+                            business. it's a dating sim meets idle tycoon with hilarious gilded-age humor for my
+                            intellectuals.
+                        </p>
+                        <img
+                            src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/817840/ss_cb68cfb0011f1e4e2692b193c8f4c654ce1f865d.600x338.jpg?t=1737497845" />
+                        <p>
+                            you play a rich victorian heir whose money disappears and your former assets revoked. You
+                            must work from the ground up with only a small million dollar or so loan to get you started.
+                            with your trusty battle buttler and business maid you rise up through the ranks and meet
+                            other business owners of the upper echelons. oh yeah, and you can fuck them.
+                        </p>
+                    </details>
+
+                    <section class="tags">
+                        <a href="#tycoon">#tycoons</a><a href="#lifesims">#lifesims</a
+                        ><a href="#datingsims">#datingsims</a><span>#myrecs</span>
+                    </section>
+                    <p class="center"><a href="#">back to top</a></p>
+                </article>
+<!--you don't have to add the tag links at the bottom of the post for it to show up in the tag filters! as long as you remember to put the tag id in the article class-->
+
+<!--this button brings you back to the top of the page, like it says-->
+<section id="page-nav">
+    <p class="center"><a href="#">back to top</a></p>
+</section>
+</main>
+
+<footer></footer>
+</div>
+</body>
+</html>

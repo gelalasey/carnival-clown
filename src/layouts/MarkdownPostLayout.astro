@@ -1,0 +1,42 @@
+---
+import BlogLayout from "./BlogLayout.astro";
+import "../styles/blog.css";
+const { frontmatter } = Astro.props;
+---
+
+<BlogLayout
+    title={frontmatter.title}
+    subtitle={frontmatter.pubDate.toLocaleDateString()}
+>
+    <!-- main text (description + image) -->
+    <div slot="main-text">
+        <p><em>{frontmatter.description}</em></p>
+        <br>
+        <div class="flexbox">
+            <img
+                src={frontmatter.image.url}
+                width="300"
+                alt={frontmatter.image.alt}
+            />
+        </div>
+    </div>
+
+    <!-- full content (markdown body + tags) -->
+    <div slot="full">
+        <div class="markdown">
+            <!-- ✅ Markdown body will flow in here -->
+            <slot />
+
+            <hr />
+            <div class="tags">
+                {
+                    frontmatter.tags.map((tag: string) => (
+                        <button class="learn-more">
+                            <a href={`/tags/${tag}`}>{tag}</a>
+                        </button>
+                    ))
+                }
+            </div>
+        </div>
+    </div>
+</BlogLayout>

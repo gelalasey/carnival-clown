@@ -1,0 +1,72 @@
+---
+import InnerToyBox from "../components/InnerToyBox.astro";
+import Layout from "../layouts/Layout.astro";
+
+const title = "Prize Counter";
+const subtitle = "toybox";
+const bannerImage = "/bg/hoshi_y_t.gif";
+const tinyImage = "/smalls/sm-tent.gif";
+---
+
+<Layout
+    title={title}
+    subtitle={subtitle}
+    bannerImage={bannerImage}
+    tinyImage={tinyImage}
+>
+    <div slot="main-text">
+        <p>
+            Below is a collection of the graphics used on the site categorized
+            by type and the creator tagged below. Reminder I cannot gaurantee I
+            will keep these graphics on my site forever, be sure to download
+            from the original sources.
+        </p>
+        <br />
+        <div class="flexbox">
+            <a href="https://graphic.neocities.org/"
+                ><img src="https://graphic.neocities.org/Button2.png" /></a
+            >
+            <a href="http://whimsical.heartette.net/index" target="_blank"
+                ><img src="/link-backs/whimsical.gif" /></a
+            >
+            <a href="http://www.asterism-m.com/" target="_blank"
+                ><img
+                    src="http://www.asterism-m.com/88x31.gif"
+                    width="88"
+                    height="31"
+                    alt="ASTERISM"
+                /></a
+            >
+
+            <a href="https://goodmode.neocities.org"
+                target="_blank"
+                ><img src="/link-backs/gmbadge.png" /></a
+            >
+            <a href="https://artwork.neocities.org/"
+                ><img src="/link-backs/00buttonartwork.gif" /></a
+            >
+            <a href="https://kawaiiattic.arunyi.art/#" target="_blank"
+                ><img src="/link-backs/KAWAIIATTIC.gif" /></a
+            >
+            <a href="https://cinni.net/directory/" target="_blank">
+                <img src="https://cinni.net/directory/img/88x31.png" /></a
+            >
+            <a href="https://foollovers.com/Administrator" target="_blank">
+                <img src="/link-backs/foollovers8826.gif" /></a
+            >
+            <a href="http://1kbsozai.com" target="_blank"
+                ><img
+                    src="/link-backs/sozaibana.gif"
+                    alt="1キロバイトの素材屋さん"
+                /></a
+            >
+        </div>
+        <br />
+    </div>
+
+    <div slot="full">
+        <InnerToyBox />
+    </div>
+
+   
+</Layout>

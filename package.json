@@ -11,6 +11,10 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.13.2"
+    "@astrojs/preact": "^4.1.0",
+    "@astrojs/rss": "^4.0.12",
+    "@fontsource/fontdiner-swanky": "^5.2.6",
+    "astro": "^5.13.2",
+    "preact": "^10.27.1"
   }
 }

@@ -230,10 +230,12 @@ header img {
 
 li{
     list-style-image: url(/smalls/cloverL.gif);
+    text-align: left;
 }
 
 li:nth-child(odd){
     list-style-image: url(/smalls/cloverR.gif);
+    text-align: left;
 }
 
 

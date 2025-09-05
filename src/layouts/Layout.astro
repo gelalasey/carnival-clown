@@ -15,6 +15,7 @@ const { title, subtitle, tinyImage, bannerImage } = Astro.props;
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" type="image/x-icon" href="/favicon.png" />
 		<title>{title}</title>
 	</head>
 
@@ -33,10 +34,9 @@ const { title, subtitle, tinyImage, bannerImage } = Astro.props;
 					<img src={tinyImage ?? "/smalls/sm-balloons.gif"} />
 				</h1>
 				<h2>{subtitle}</h2>
-				
-					<slot name="main-text" />
-					<!-- your content is injected here -->
-				
+
+				<slot name="main-text" />
+				<!-- your content is injected here -->
 			</section>
 
 			<section class="small">
@@ -52,9 +52,10 @@ const { title, subtitle, tinyImage, bannerImage } = Astro.props;
 				<slot name="left-half" />
 			</section>
 			<section class="half"><slot name="right-half" /></section>
-	</div>
+		</div>
 		<div class="bottom"></div>
 		<footer></footer>
 		<Footer />
+		<script src="/scripts/clicksplosion.js" defer></script>
 	</body>
 </html>

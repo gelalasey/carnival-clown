@@ -4,7 +4,7 @@ pubDate: 2025-08-17
 description: "gatcha is a scam. we used to just pay a base amount of a game and got to play with all the pieces either immediately or gauranteed through play time. why pay money for something that doesn't even exist. just make your own art. look....i know...and yet...i fell for it.."
 author: 'gelsey'
 image:
-    url: '/blog/game/hsd3.jpg'
+    src: '/blog/game/hsd3.jpg'
     alt: 'hsd light purple party'
 tags: ["games", "gatcha", "mobage", "hsd", "sanrio"]
 ---

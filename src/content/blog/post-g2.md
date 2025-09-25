@@ -6,7 +6,7 @@ description: " my dream school is this: wake up everyday in a lovely japanese ca
                         talent to produce in order to fulfill your goal of becoming an idol producer. "
 author: 'gelsey'
 image:
-    url: 'https://play-lh.googleusercontent.com/5FkEULS9qpwWoKPMNusvYLJ6sF0I-8D3-RDk69DVtcQFFFJBEfSmPHqlodEGea4G5_0=w526-h296-rw'
+    src: 'https://play-lh.googleusercontent.com/5FkEULS9qpwWoKPMNusvYLJ6sF0I-8D3-RDk69DVtcQFFFJBEfSmPHqlodEGea4G5_0=w526-h296-rw'
     alt: 'hajime'
 tags: ["games", "tycoons", "mobage", "idols", "gakumas", "idolmaster"]
 ---

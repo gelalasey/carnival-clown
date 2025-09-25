@@ -4,9 +4,9 @@ pubDate: 2025-08-11
 description: "what makes a game underrated?  let's not worry about the specific. for this list I'm going through my favorite games in my steam library that have under 50k positive reviews."
 author: 'gelsey'
 image:
-    url: 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/43600/ss_4bad214d13354a2bcd5563429ab6a8d1fb8b89c7.600x338.jpg?t=1734469468'
+    src: 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/43600/ss_4bad214d13354a2bcd5563429ab6a8d1fb8b89c7.600x338.jpg?t=1734469468'
     alt: 'this jpg is unlocked'
-tags: ["games", "tycoons", "life sims", "dating sims"]
+tags: ["games", "tycoons", "life sims", "otome"]
 ---
 my top underrated games in my library
 -------------------------------------

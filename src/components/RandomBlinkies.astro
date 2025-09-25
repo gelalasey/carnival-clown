@@ -9,7 +9,7 @@ const imagesPath = path.join(process.cwd(), "public/blinkies/");
 const files = fs.readdirSync(imagesPath);
 
 // Pick a random image (only runs once per page load)
-const randomImage = `/stamps/${files[Math.floor(Math.random() * files.length)]}`;
+const randomImage = `/blinkies/${files[Math.floor(Math.random() * files.length)]}`;
 ---
 
 <img src={randomImage} alt="Random Image" class="random-img" />

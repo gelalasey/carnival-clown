@@ -4,7 +4,7 @@ pubDate: 2025-08-07
 description: 'truly i am not big on boy bands. like i may be a gay little twink but at the end of the day im here to see pretty girls in pretty dresses. but rindo ent. said "bet" and gave us the greatest combination - pretty boy in pretty dress/suit gender ambiguous wardrobes.'
 author: 'music gelsey'
 image:
-    url: 'https://i.pinimg.com/736x/a0/77/24/a0772402cf4a1cdeeac3aa5c05e8417f.jpg'
+    src: 'https://i.pinimg.com/736x/a0/77/24/a0772402cf4a1cdeeac3aa5c05e8417f.jpg'
     alt: 'you newest boyfriends'
 tags: ["jpop", "boy", "lovesick", "music"]
 ---

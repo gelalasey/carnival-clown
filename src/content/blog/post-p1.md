@@ -4,7 +4,7 @@ pubDate: 2025-08-08
 description: "a while ago i went to the national museum of toys and miniatures in kansas city, mo. this was during my arduous 24+ bus ride from hell (more on that never) and i was surprised this gem existed. it's got a great combination of both nostalgia and history. let's just get straight to the goods"
 author: 'gelsey'
 image:
-    url: '/blog/personal/1000003286.jpg'
+    src: '/blog/personal/1000003286.jpg'
     alt: 'this jpg is unlocked'
 tags: ["personal", "travel", "dolls", "minis"]
 ---

@@ -1,10 +1,11 @@
 ---
 title: 'Zombie land saga'
 pubDate: 2025-08-22
+date: 2025-08-22
 description: "  I will fight someone to the death who claims that subs are always better than dubs. I get that was a real consistent thing back in like *checks watch* 2009... but now that capitalism realizes they can make money off of anime fans and increase their audience size I think dubs have grown to become more entertaining. Case in point - Zombie land saga"
 author: 'gelsey'
 image:
-    url: "https://c.tenor.com/LbNm6acvJo8AAAAd/tenor.gif"
+    src: "https://c.tenor.com/LbNm6acvJo8AAAAd/tenor.gif"
     alt: 'are you stupid kotaro'
 tags: ["anime", "idols", "comedy", "supernatural" ]
 ---

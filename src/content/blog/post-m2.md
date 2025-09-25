@@ -2,10 +2,9 @@
 title: 'onstage:モブノデレラ(mob no derella) by ≠ME'
 pubDate: 2025-08-08
 description: 'a vulnerable and demure fairytale song with great visuals, but missing a key instrument (the voice). the anthem for everyone who feels like a side character in their own story.'
-image:
-    url: 'https://i.ytimg.com/vi/TmIBIm4TYx8/mqdefault.jpg'
-    alt: 'im not the main character'
-tags: ["jpop", "girl", "Noimii ", "music", "onstage"]
+image: 
+    src: "https://assets.st-note.com/production/uploads/images/184111956/rectangle_large_type_2_5ecbb8626616c441afb281801fc15be4.png?fit=bounds&quality=85&width=1280"
+tags: ["jpop", "girl", "noimii", "music", "onstage"]
 ---
  <iframe width="560" height="315" src="https://www.youtube.com/embed/rifFL1BbZJQ?si=-84VeVuXRUy-moGn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 

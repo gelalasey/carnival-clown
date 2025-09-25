@@ -4,7 +4,7 @@ pubDate: 2025-08-08
 description: "what am i up to for the next 28-31 days? let's chat"
 author: 'gelsey'
 image:
-    url: 'https://64.media.tumblr.com/1837d4a2541086b601091c7dc19fadca/dd07221c5a61deb1-c8/s400x600/b76fd49cecc3bd4b12a03c697d688882a05b5bbc.gif'
+    src: 'https://64.media.tumblr.com/1837d4a2541086b601091c7dc19fadca/dd07221c5a61deb1-c8/s400x600/b76fd49cecc3bd4b12a03c697d688882a05b5bbc.gif'
     alt: 'weeeeeeeee'
 tags: ["personal", "goals", "glowup"]
 ---

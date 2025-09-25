@@ -1,13 +1,16 @@
 ---
 import BlogLayout from "../layouts/BlogLayout.astro";
 import BlogPost from "../components/BlogPost.astro";
-import { getCollection } from "astro:content";
 import MyTags from "../components/MyTags.astro";
+import { getCollection } from "astro:content";
 
 const allPosts = await getCollection("blog");
+allPosts.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
 
-const title = "park newsletter";
-const subtitle = "blog posts";
+const latestPosts = allPosts.slice(0, 5);
+
+const title = "Park Newsletter";
+const subtitle = "Blog posts";
 ---
 
 <BlogLayout title={title} subtitle={subtitle}>
@@ -48,11 +51,12 @@ const subtitle = "blog posts";
             >
         </p>
     </div>
+
     <div slot="full">
-        <h1>Most Recent</h1>
+        <h1>Latest Posts</h1>
         <div class="posts-grid">
             {
-                allPosts.map((post) => (
+                latestPosts.map((post) => (
                     <BlogPost
                         url={`/posts/${post.slug}/`}
                         title={post.data.title}
@@ -61,20 +65,14 @@ const subtitle = "blog posts";
                 ))
             }
         </div>
+
+        <p class="more-link">
+            <a href="/posts/1">View all posts →</a>
+        </p>
     </div>
+
     <div slot="tags">
         <h1>All Post Tags</h1>
-        <br>
         <MyTags />
-        <br>
     </div>
 </BlogLayout>
-
-<style>
-    .posts-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-        gap: 0.5rem;
-        margin-top: 1rem;
-    }
-</style>

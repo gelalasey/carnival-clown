@@ -3,7 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import StatusCafe from "../components/StatusCafe.astro";
 import Glupdates from "../components/Glupdates.astro";
 
-const title = "entry gate";
+const title = "Gelsey Land";
 const subtitle = "welcome to park services";
 const bannerImage = "/bg/hoshi_y_t.gif";
 const tinyImage = "/smalls/sm-balloons.gif";
@@ -22,7 +22,13 @@ const tinyImage = "/smalls/sm-balloons.gif";
 	subtitle={subtitle}
 	bannerImage={bannerImage}
 	tinyImage={tinyImage}
->
+	><div slot="after-navl">
+		<div class="hero">
+			<a href="/umpd.html" class="button" style="font-size: 1.25rem;"
+				>looking for uma in your area?</a
+			>
+		</div>
+	</div>
 	<div slot="main-text">
 		<div class="flexbox">
 			<p>
@@ -43,7 +49,7 @@ const tinyImage = "/smalls/sm-balloons.gif";
 		<ul>
 			<li><s>fix my status cafe widget</s></li>
 			<li>finish populating my blog posts</li>
-			<li>find a cleaner way to display/organize said posts</li>
+			<li><s>find a cleaner way to display/organize said posts</s></li>
 			<li>
 				add a section for personal life maxxing - non media based
 				hobbies and interests usually related to self improvement
@@ -91,3 +97,22 @@ const tinyImage = "/smalls/sm-balloons.gif";
 		</section>
 	</div>
 </Layout>
+<style>
+	.hero {
+		background: url("/tables/buntingframe.png"), url("/umpd/groupphoto.png");
+		background-size: cover, cover;
+		background-position: center, center;
+		background-repeat: no-repeat, no-repeat;
+		height: 10rem;
+		position: relative;
+	}
+	.hero a {
+		margin: 0;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		font-size: 1rem !important ;
+	}
+</style>

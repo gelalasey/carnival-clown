@@ -1,12 +1,13 @@
 ---
 import "../styles/umpd.css";
 
+
 import "@fontsource/fontdiner-swanky";
 import UmaHeader from "../components/UmaHeader.astro";
 import Marquee from "../components/Marquee.astro";
 import UmaFooter from "../components/UmaFooter.astro";
 
-const { title, cardname, date, rank, racetype, strat, potential, cardimg } =
+const { title, cardname, date, rank, racetype, strat, potential, cardimg, } =
     Astro.props;
 ---
 
@@ -65,6 +66,7 @@ const { title, cardname, date, rank, racetype, strat, potential, cardimg } =
                     <div class="container">
                         <h2>Memories</h2>
                         <slot name="the-whole2" />
+                        
                     </div>
                 </div>
             </div>

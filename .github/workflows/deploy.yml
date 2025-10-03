@@ -1,0 +1,36 @@
+name: Deploy Astro site to Neocities
+
+on:
+  push:
+    branches:
+      - main   # or whatever branch you want to deploy from
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout code
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Setup Node
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20   # Astro recommends Node 18+
+
+      # Install dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # Build the site
+      - name: Build site
+        run: npm run build
+
+      # Deploy to Neocities
+      - name: Deploy to Neocities
+        uses: bcomnes/deploy-to-neocities@v2
+        with:
+          api_token: ${{ secrets.NEOCITIES_API_TOKEN }}
+          dir: ./dist

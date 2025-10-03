@@ -1,0 +1,90 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const title = "fun house";
+const subtitle = "lifestyle";
+const bannerImage = "/bg/hoshi_y_t.gif";
+const tinyImage = "/smalls/sm-dress.gif";
+---
+
+<Layout
+    title={title}
+    subtitle={subtitle}
+    bannerImage={bannerImage}
+    tinyImage={tinyImage}
+>
+    <div slot="main-text"></div>
+
+    <div slot="full">
+        <h2>why make a site?</h2>
+    </div>
+
+    <div slot="left-half">
+        <!--dont forget to copy the css if using elsewhere -->
+        <div class="hero"></div>
+        <div class="mask">
+            <img
+                class="one"
+                src="https://64.media.tumblr.com/tumblr_m2yc2gEd541r361u8o1_500.png"
+                alt="Balloons"
+            />
+            <a href="/umpd.html" class="button" style="font-size: 1.25rem;"
+                >coming soon - my magick practice</a
+            >
+        </div>
+        <p>
+            Source: <a
+                href="https://haruchonns.tumblr.com/post/50142146786/pinkagony-cicely-mary-barker-the-narcissus"
+                >Cicely Mary Barker</a
+            >
+        </p>
+    </div>
+
+    <div slot="right-half">
+        <h2>Useful links</h2>
+        <ul>
+            <li>
+                <a href="https://lepanache.substack.com/"> Le Panache et Moi</a>
+                A fashion and lifestyle blog from a Roccoco Enthusiast
+            </li>
+        </ul>
+    </div>
+</Layout>
+<style>
+    /* sourced from https://web.dev/articles/css-masking/ */
+    .mask {
+        width: 400px;
+        height: 300px;
+        margin: 1em auto;
+    }
+
+    .mask img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        position: relative;
+    }
+
+    .one {
+        -webkit-mask-image: url(https://64.media.tumblr.com/3038cd9b3775a435e658472e4426462a/f44e1800a849e5f6-33/s1280x1920/ab430174bd5259e552e1488692204af775213092.pnj);
+        mask-image: url(https://64.media.tumblr.com/3038cd9b3775a435e658472e4426462a/f44e1800a849e5f6-33/s1280x1920/ab430174bd5259e552e1488692204af775213092.pnj);
+    }
+    .posts-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+        gap: 0.5rem;
+        margin-top: 1rem;
+    }
+
+    .mask a {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 10;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+</style>

@@ -12,9 +12,11 @@ intro: "Hey Gamers! This is my first time creating my own umpd strat guide - I h
 
 <style>
 ul {
-  list-style: url("/smalls/sm-clover.png");
+  list-style-image: url("/smalls/sm-clover.png");
 }
 </style>
+
+*updated 9/26/25 to reflect current status of builds*
 
 # Quick Facts
 
@@ -25,36 +27,36 @@ ul {
 # Inheritance
 
 <div class="flexbox">
-<img src="/public/blog/game/g6-1.png" style="width: 50%">
-<img src="/public/blog/game/g6-2.png" style="width: 50%">
+<img src="/blog/game/g6-1.png" style="width: 50%">
+<img src="/blog/game/g6-2.png" style="width: 50%">
 </div>
 
-After getting inspired by [UmaPokke’s](https://www.youtube.com/watch?v=82KW2lni390&t=222s) video on how “white farming” works - I’ve decided to create my build backwards. I will start thinking about what white sparks I want and use those to build my pool of skills I want. These will serve as my great grandparents and reduce my need for more specialized cards later in the run. As you can see I’m aiming to create 5 total great grandparents - Oguri, El, Maru, Sakura and Suzu. The Maru repeats a lot just because she helps boost the compatibility. I’ve already created 3 of my great granparents  and here’s where I landed with them. 
+After getting inspired by [UmaPokke’s](https://www.youtube.com/watch?v=82KW2lni390&t=222s) video on how “white farming” works - I’ve decided to create my build backwards. I will start thinking about what white sparks I want and use those to build my pool of skills I want. These will serve as my great grandparents and reduce my need for more specialized cards later in the run. As you can see I’m aiming to create 5 total great grandparents - Oguri, El, Maru, Sakura and Suzu. The Maru repeats a lot just because she helps boost the compatibility. I’ve already created my great granparents  and here’s where I landed with them. 
 
 - **Oguri Cap** -  Corner acc., Takurazaka, Yasuda, Corner adept, Focus
 - **Sakura Bakushin O** - Sprinters stakes, Corner adept, focus
 - **Silent Suzuka** - URA 2, focus , green
 - **El Condor Pasa** - Left handed, Corner Acceleration, URA Finale 1
+- **Maruzensky** -URA Finale, Derby 1
 
-For my Maru builds these are the most important sparks I hope to attain. Again I’m really not at all looking at those blue or pink skills. 
 
-- **Maruzensky** -Front corner (SSR Suzuka support), Mile corner (Either SR Daitaku or Fuji Kiseki), Ground Work (Using my SSR Oguri support)
 
-<img src="/public/div/smallcloversdiv.png">
+<img src="/div/smallcloversdiv.png">
 
 ## Grandparents
 
 Next will be my grandparents - I’ll be focusing on maintain the current white sparks obtained and attempt to at least keep if not raise their star level. Now I will also be focusing on including a useful blue skill. 
 
-- **Grass Wonder** - Stam or Power 2 star, Corner Acc. Takurazaka, Yasuda, Corner Adept, Focus, Groundwork
-- **Taiki Shuttle** - Power or Speed 2 Star, Sprinters stakes, Corner, focus, Front Runner, Mile Corner
-- **Mihono Bourbon** - URA 2, Focus, Suzuka’s Green
+- **Grass Wonder (Oguri)** - Power 2 star, Corner Acc., Corner Adept, Ground Work (Using my SSR Oguri support)
+- **Grass Wonder (Maru)** - Stam 2 star, Corner Acc. Corner Adept, Groundwork
+- **Taiki Shuttle** - Power or Speed 2 Star, Sprinters stakes, Front Runner, Mile Corner
+- **Mihono Bourbon** - URA 2, Focus, Suzuka’s Green, Front Corner
 
 
-<img src="/public/div/smallcloversdiv.png">
+<img src="/div/smallcloversdiv.png">
 
 ## Parents 
-![](/public/blog/game/g6-3.png)
+![](/blog/game/g6-3.png)
 
 Once I’ve got my grandparents set it’s time to start grinding the triangle over and over again until I get my perfect parents. At this point I’ll be trying to maintain as many of my white sparks as I can with only a few skills being **completely** necessary for the build. I’ll also be finalizing my blue and pink skills
 
@@ -72,7 +74,7 @@ Once I’ve got my grandparents set it’s time to start grinding the triangle o
 **Must have sparks**: Sprinters stakes, Takurazaka or Yasuda Race,
 **Bonus sparks**: Corner Adept, Focus, Front Corners, Mile Corner, Corner Acc. 
 
-<img src="/public/div/smallcloversdiv.png">
+<img src="/div/smallcloversdiv.png">
 
 # Cards
 
@@ -100,7 +102,7 @@ Once I have my parents set - then it’s time to really decide my final deck. I 
 - SR Mihono Bourbon: Useful front runner skills and decent power card
 - SR King Halo: Homestretch haste can be got through a random event, she’s also good specialty priority and speed gain. 
 
-<img src="/public/div/smallcloversdiv.png">
+<img src="/div/smallcloversdiv.png">
 
 # FINAL MARU
 

@@ -1,0 +1,68 @@
+---
+export interface Props {
+    audioSrc: string;
+    imgSrc: string; 
+    playingImgSrc?: string; 
+    alt?: string;
+}
+
+const {
+    audioSrc,
+    imgSrc,
+    playingImgSrc,
+    alt = "Audio trigger image",
+} = Astro.props;
+---
+
+<div class="song">
+    <audio id="audio" src={audioSrc}></audio>
+    <img
+        id="img"
+        src={imgSrc}
+        alt={alt}
+        width="auto"
+        height="auto"
+        class="animate__animated"
+    />
+</div>
+
+<style>
+    @import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css";
+
+    div.song {
+
+        width: auto;
+        text-align: center;
+    }
+
+    #img:hover,
+    #img:focus {
+        -webkit-animation-name: bounce;
+        animation-name: bounce;
+        -webkit-transform-origin: center bottom;
+        transform-origin: center bottom;
+        cursor: pointer;
+    }
+</style>
+
+<script>
+    const img = document.getElementById("img") as HTMLImageElement | null;
+    const audio = document.getElementById("audio") as HTMLAudioElement | null;
+    // Pass the value from Astro to JS
+    const playingImgSrc = /** @type {string | undefined} */ (
+        Astro.props.playingImgSrc
+    );
+    const imgSrc = /** @type {string} */ (Astro.props.imgSrc);
+
+    if (img && audio) {
+        img.addEventListener("click", () => {
+            if (audio.paused) {
+                audio.play();
+                if (playingImgSrc) img.src = playingImgSrc;
+            } else {
+                audio.pause();
+                img.src = imgSrc;
+            }
+        });
+    }
+</script>

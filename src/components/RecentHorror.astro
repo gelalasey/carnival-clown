@@ -22,22 +22,30 @@ const latestPost = filteredPosts[0];
 {
     latestPost ? (
         <div class="latest-post">
-                <article class="card">
-                    <a href={`/posts/${latestPost.slug}`}>
-                        <img
-                            src={latestPost.data.image?.url}
-                            alt={latestPost.data.image?.alt}
-                        />
-                        <div class="card-content">
-                            <h2>{latestPost.data.title}</h2>
-                            <p>{latestPost.data.description}</p>
-                            <p class="date">
-                                {latestPost.data.pubDate.toDateString()}
-                            </p>
-                        </div>
-                    </a>
-                </article>
-            </div>
+            <article class="card">
+                <a href={`/posts/${latestPost.slug}`}>
+                    <img
+                        src={
+                            typeof latestPost.data.image === "string"
+                                ? latestPost.data.image
+                                : latestPost.data.image.src
+                        }
+                        alt={
+                            typeof latestPost.data.image === "string"
+                                ? latestPost.data.title
+                                : latestPost.data.image.alt
+                        }
+                    />
+                    <div class="card-content">
+                        <h2>{latestPost.data.title}</h2>
+                        <p>{latestPost.data.description}</p>
+                        <p class="date">
+                            {latestPost.data.pubDate.toDateString()}
+                        </p>
+                    </div>
+                </a>
+            </article>
+        </div>
     ) : (
         <p>No posts found for {tag}.</p>
     )

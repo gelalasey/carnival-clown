@@ -15,18 +15,12 @@ if (typeof image === "string") {
         alt: "Placeholder image",
     };
 }
+
+import "../styles/blog.css";
 ---
 
 <a href={url} class="post-card">
-    {
-        displayImage && (
-            <img
-                src={displayImage.src}
-                alt={displayImage.alt}
-                class="post-image"
-            />
-        )
-    }
+    <img src={displayImage.src} alt={displayImage.alt} class="post-image" />
     <h2 class="post-title">{title}</h2>
 </a>
 

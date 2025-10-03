@@ -7,12 +7,14 @@ const blog = defineCollection({
         pubDate: z.date(), 
         updatedDate: z.date().optional(),
         image: z.union([
-            z.string(), // allow plain URLs
-            z.object({  // allow object format
+            z.string(),
+            z.object({
                 src: z.string(),
                 alt: z.string().optional(),
             }),
-        ]).optional(),
+        ]),
+        intro: z.string().optional(),
+        description: z.string().optional(),
         tags: z.array(z.string()).optional(),
     }),
 });

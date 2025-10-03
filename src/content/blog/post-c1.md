@@ -4,7 +4,7 @@ pubDate: 2025-08-10
 description: "my second original miniature build is one of many i plan to make in a series for my lol dolls. in order to curb my impulses to keep buying those little gatcha balls that are soooo satisfying to unwrap, i made myself promise that each doll would get her own little room for a larger dollhouse i plan to build. The garden was the first one because i got the perfect green box base to put them in"
 author: 'gelsey'
 image:
-    src: '/blog/art/garden1.jpg'
+    src: "/blog/art/garden1.jpg"
     alt: 'tiptoing through the mini garden'
 tags: ["art", "minis", "lol dolls", "original", "minibrands"]
 ---

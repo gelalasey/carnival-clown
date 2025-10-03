@@ -2,7 +2,7 @@
 import "../styles/card.css";
 import { getCollection } from "astro:content";
 
-const { tag = "otome" } = Astro.props; 
+const { tag = "otome" } = Astro.props;
 const posts = await getCollection("blog");
 
 // normalize tags so case/spacing doesn't break matches
@@ -26,8 +26,16 @@ const latestPost = filteredPosts[0];
                 <article class="card">
                     <a href={`/posts/${latestPost.slug}`}>
                         <img
-                            src={latestPost.data.image?.url}
-                            alt={latestPost.data.image?.alt}
+                            src={
+                                typeof latestPost.data.image === "string"
+                                    ? latestPost.data.image
+                                    : latestPost.data.image.src
+                            }
+                            alt={
+                                typeof latestPost.data.image === "string"
+                                    ? latestPost.data.title
+                                    : latestPost.data.image.alt
+                            }
                         />
                         <div class="card-content">
                             <h2>{latestPost.data.title}</h2>

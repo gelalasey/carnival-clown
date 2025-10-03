@@ -130,8 +130,7 @@ div.small > img {
 }
 /*this is for lists*/
 li {
-  /*list-style-type: "♥ ";*/
-  list-style-type: "🍧";
+  list-style: url(/public/smalls/littleice.gif);
 }
 
 .spooky li{

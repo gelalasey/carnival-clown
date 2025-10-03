@@ -26,9 +26,18 @@ const latestPost = filteredPosts[0];
             <div class="grid">
                 <article class="card">
                     <a href={`/posts/${latestPost.slug}`}>
+                    
                         <img
-                            src={latestPost.data.image?.url}
-                            alt={latestPost.data.image?.alt}
+                            src={
+                                typeof latestPost.data.image === "string"
+                                    ? latestPost.data.image
+                                    : latestPost.data.image.src
+                            }
+                            alt={
+                                typeof latestPost.data.image === "string"
+                                    ? latestPost.data.title
+                                    : latestPost.data.image.alt
+                            }
                         />
                         <div class="card-content">
                             <h2>{latestPost.data.title}</h2>
